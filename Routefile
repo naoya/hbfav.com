@@ -1,0 +1,15 @@
+hosted_zone "hbfav.com." do
+  rrset "feed.hbfav.com.", "CNAME" do
+    ttl 300
+    resource_records(
+      "hbfav.herokuapp.com"
+    )
+  end
+
+  rrset "push.hbfav.com.", "CNAME" do
+    ttl 300
+    resource_records(
+      "hbfav-push.herokuapp.com"
+    )
+  end
+end
